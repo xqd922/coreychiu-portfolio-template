@@ -251,15 +251,15 @@ export function Header() {
         setProperty('--header-mb', `${-scrollY}px`)
       }
 
-      if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
-        setProperty('--header-inner-position', 'fixed')
-        removeProperty('--header-top')
-        removeProperty('--avatar-top')
-      } else {
-        removeProperty('--header-inner-position')
-        setProperty('--header-top', '0px')
-        setProperty('--avatar-top', '0px')
-      }
+      // if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+      //   setProperty('--header-inner-position', 'fixed')
+      //   removeProperty('--header-top')
+      //   removeProperty('--avatar-top')
+      // } else {
+      //   removeProperty('--header-inner-position')
+      //   setProperty('--header-top', '0px')
+      //   setProperty('--avatar-top', '0px')
+      // }
     }
 
     function updateAvatarStyles() {
