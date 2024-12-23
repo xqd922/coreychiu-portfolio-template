@@ -332,34 +332,6 @@ export const friends: Array<FriendItemType> = [
     name: 'Corey Chiu',
     link: { href: 'https://coreychiu.com' },
   },
-  {
-    name: 'Axis Wang',
-    link: { href: 'https://wangxs.cfd' },
-  },
-  {
-    name: 'Greener-Dalii Studio',
-    link: { href: 'https://greenerdalii.top' },
-  },
-  {
-    name: 'Luolink',
-    link: { href: 'https://luolink.com' },
-  },
-  {
-    name: 'Frend guo',
-    link: { href: 'https://frendguo.com' },
-  },
-  {
-    name: 'Amon Xu',
-    link: { href: 'https://amonxu.com' },
-  },
-  {
-    name: 'Bill Fu',
-    link: { href: 'https://billfu.com' },
-  },
-  {
-    name: 'SavoKiss',
-    link: { href: 'https://savokiss.com' },
-  },
 ]
 
 
