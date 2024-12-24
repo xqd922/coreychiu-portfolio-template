@@ -41,11 +41,29 @@ export const changelogList: Array<ChangelogItemType> = [
     ]
   },
   {
+    date: '2024-12-23',
+    content: [
+      {
+        title: '🐍 Add GitHub Contribution snake',
+        description: 'Add GitHub Contribution snake to showcase my GitHub contribution in a funny way'
+      },
+    ]
+  },
+  {
     date: '2024-12-24',
     content: [
       {
         title: '📦 Add resources page',
         description: 'Add resources page to list my using and recommended resources'
+      },
+    ]
+  },
+  {
+    date: '2024-12-25',
+    content: [
+      {
+        title: '🐦‍⬛ Add activity section',
+        description: 'Add activity section to showcase my activity snippets'
       },
     ]
   }
