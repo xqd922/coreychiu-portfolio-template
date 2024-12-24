@@ -77,15 +77,6 @@ export default async function Home() {
             ))}
           </ul>
         </div>
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
-            {activityHeadLine}
-          </h2>
-          <p className="text-base text-muted-foreground max-w-2xl mb-2">
-            {activityIntro}
-          </p>
-          <TweetGrid />
-        </div>
         <div className="mx-auto flex flex-col max-w-xl gap-6 py-8 my-8 lg:max-w-none border-t border-muted">
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
             {blogHeadLine}
@@ -111,6 +102,15 @@ export default async function Home() {
             {/* <Newsletter /> */}
             <Feed />
           </div>
+        </div>
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
+          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
+            {activityHeadLine}
+          </h2>
+          <p className="text-base text-muted-foreground max-w-2xl mb-2">
+            {activityIntro}
+          </p>
+          <TweetGrid />
         </div>
       </Container>
     </>
