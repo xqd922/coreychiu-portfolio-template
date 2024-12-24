@@ -45,8 +45,8 @@ export function GithubProjectCard({ project, titleAs }: { project: ProjectItemTy
           href={utmLink}
           target='_blank'
           rel='noopener noreferrer'
-          className='h-full w-full absolute'>
-          <ArrowRight size={32} weight="duotone" className="absolute bottom-10 right-10 h-4 w-4 group-hover:text-primary" />
+          className='absolute inset-0 z-20'>
+          <ArrowRight size={32} weight="duotone" className="absolute bottom-6 right-4 h-4 w-4 group-hover:text-primary group-hover:cursor-pointer" />
         </Link>
       </div>
     </li>
