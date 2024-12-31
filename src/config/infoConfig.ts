@@ -62,6 +62,11 @@ export const socialLinks: Array<SocialLinkType> = [
     href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
   },
   {
+    name: 'Discord',
+    icon: 'discord',
+    href: 'https://discord.gg/xTxRg3Ej'
+  },
+  {
     name: 'Ko-fi',
     icon: 'coffee',
     href: 'https://ko-fi.com/coreychiu'
