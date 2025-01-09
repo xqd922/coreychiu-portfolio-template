@@ -7,7 +7,7 @@ const OPENPANEL_PROJECT_ID = process.env.OPENPANEL_PROJECT_ID;
 export async function GET() {
   try {
     // 获取总访问数据
-    const response = await fetch(`${OPENPANEL_API_URL}/export/events?projectId=coreychiu&event=screen_view`, {
+    const response = await fetch(`${OPENPANEL_API_URL}/export/events?projectId=${OPENPANEL_PROJECT_ID}&event=screen_view`, {
       headers: {
         'openpanel-client-id': OPENPANEL_CLIENT_ID!,
         'openpanel-client-secret': OPENPANEL_SECRET_ID!,
