@@ -17,7 +17,7 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
         <div className=''>
           <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-start sm:items-center gap-4'>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full">
-              <Favicon url={project.link.href} />
+              <Favicon url={project.link.href} src={project.logo} alt={`${project.name} logo`} />
             </div>
             <Component className="text-base font-semibold">
               {project.name}

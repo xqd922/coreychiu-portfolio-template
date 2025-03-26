@@ -16,7 +16,7 @@ import GitHubSnake from '@/components/home/GitHubSnake'
 import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from "@/components/ui/icon-cloud";
 import { TweetGrid } from "@/components/home/TweetGrid";
-
+import { MarqueeVertical } from '@/components/home/MarqueeVertical'
 
 
 
@@ -110,7 +110,8 @@ export default async function Home() {
           <p className="text-base text-muted-foreground max-w-2xl mb-2">
             {activityIntro}
           </p>
-          <TweetGrid />
+          {/* <TweetGrid /> */}
+          <MarqueeVertical />
         </div>
       </Container>
     </>
