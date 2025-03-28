@@ -37,10 +37,8 @@ export default async function BlogPage({ params }: Props) {
   const content = await getMDXContent(params.slug)
 
   return (
-    <BlogLayout
-        blog={blog}
-    >
-      <div className="mt-8 prose dark:prose-invert">
+    <BlogLayout blog={blog}>
+      <div className="mt-8 prose dark:prose-invert max-w-none">
         {content}
       </div>
     </BlogLayout>
