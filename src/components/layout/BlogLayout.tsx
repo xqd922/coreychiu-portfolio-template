@@ -35,7 +35,7 @@ export function BlogLayout({
   return (
     <Container className="mt-16 lg:mt-32">
       <div className="xl:relative">
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-3xl">
           {previousPathname && (
             <button
               type="button"
@@ -48,7 +48,7 @@ export function BlogLayout({
           )}
           <article>
             <header className="flex flex-col">
-              <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 break-words">
+              <h1 className="mt-6 text-4xl font-bold tracking-normal text-zinc-800 sm:text-5xl dark:text-zinc-100 break-words">
                 {blog.title}
               </h1>
               <time

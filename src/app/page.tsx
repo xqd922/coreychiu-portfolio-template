@@ -17,6 +17,8 @@ import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from "@/components/ui/icon-cloud";
 import { TweetGrid } from "@/components/home/TweetGrid";
 import { MarqueeVertical } from '@/components/home/MarqueeVertical'
+import Link from 'next/link'
+import { ChevronRightIcon } from 'lucide-react'
 
 
 
@@ -85,13 +87,16 @@ export default async function Home() {
             {blogIntro}
           </p>
         </div>
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 pb-4">
           {/* left column */}
           {/* blog */}
           <div className="flex flex-col gap-16">
             {blogList.map((blog: BlogType) => (
               <BlogCard key={blog.slug} blog={blog} titleAs='h3'/>
             ))}
+            <Link href="/blogs" className="flex flex-row items-center text-sm text-primary hover:underline capitalize font-semibold">Read more blogs 
+              <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+            </Link>
           </div>
 
           {/* right column */}
