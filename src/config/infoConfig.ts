@@ -32,44 +32,52 @@ export type SocialLinkType = {
   name: string,
   ariaLabel?: string,
   icon: string,
-  href: string
+  href: string,
+  external?: boolean
 }
 
 export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'X',
     icon: 'x',
-    href: 'https://x.com/realcoreychiu'
+    href: 'https://x.com/realcoreychiu',
+    external: true
   },
   {
     name: 'Bsky',
     icon: 'bsky',
-    href: 'https://bsky.app/profile/coreychiu.com'
+    href: 'https://bsky.app/profile/coreychiu.com',
+    external: true
   },
   {
     name: 'Jike',
     icon: 'pill',
-    href: 'https://okjk.co/P7c1zU'
+    href: 'https://okjk.co/P7c1zU',
+    external: true
   },
   {
     name: 'Github',
     icon: 'github',
-    href: 'https://github.com/iamcorey'
+    href: 'https://github.com/iamcorey',
+    external: true
   },
   {
     name: 'Wechat',
     icon: 'wechat',
-    href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
+    href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ',
+    external: true
   },
   {
     name: 'Discord',
     icon: 'discord',
-    href: 'https://discord.gg/xTxRg3Ej'
+    href: 'https://discord.gg/xTxRg3Ej',
+    external: true
   },
   {
     name: 'Ko-fi',
     icon: 'coffee',
-    href: 'https://ko-fi.com/coreychiu'
+    href: 'https://ko-fi.com/coreychiu',
+    external: true
   }
 ]
 

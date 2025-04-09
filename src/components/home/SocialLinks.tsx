@@ -12,8 +12,8 @@ export default function SocialLinks({ className }: { className?: string }) {
             {socialLinks.map((link) => (
                 <Link
                     key={link.name}
-                    href={`${link.href}?utm_source=${utm_source}`}
-                    target="_blank"
+                    href={link.external ? `${link.href}?utm_source=${utm_source}` : link.href}
+                    target={link.external ? "_blank" : "_self"}
                     rel="noreferrer"
                     aria-label={link.ariaLabel ?? `Follow on ${link.name}`}
                     className="inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-accent hover:text-accent-foreground"
