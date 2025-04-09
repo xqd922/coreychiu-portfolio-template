@@ -1,6 +1,6 @@
 // site config
 export const utm_source = process.env.NEXT_PUBLIC_UTM_SOURCE
-
+export const site_url = process.env.NEXT_PUBLIC_SITE_URL
 
 // navigation config
 type NavItemType = {

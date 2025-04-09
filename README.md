@@ -1,3 +1,6 @@
+🌍 *[English](README.md) ∙ [简体中文](README.zh.md)*
+
+
 # Corey Chiu Portfolio Template
 
 This is a portfolio template template created by [Corey Chiu](https://coreychiu.com).
@@ -15,6 +18,7 @@ This is a portfolio template template created by [Corey Chiu](https://coreychiu.
 - MDX and Markdown support
 - RSS Feed
 - Web Analytics(Google Analytics, OpenPanel Analytics, Plausible Analytics, etc.)
+- SEO Friendly
 
 
 ## Tech Stack
