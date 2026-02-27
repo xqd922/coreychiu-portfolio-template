@@ -7,7 +7,7 @@ import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
 
 
-export function GithubProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
+export function GithubProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof React.JSX.IntrinsicElements }) {
   const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
   let Component = titleAs ?? 'h2'
   return (

@@ -6,7 +6,7 @@ import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
 import { Favicon } from 'favicon-stealer'
 
-export function FriendCard({ friend, titleAs }: { friend: FriendItemType, titleAs?: keyof JSX.IntrinsicElements }) {
+export function FriendCard({ friend, titleAs }: { friend: FriendItemType, titleAs?: keyof React.JSX.IntrinsicElements }) {
   const utmLink = `${friend.link.href}?utm_source=${utm_source}`
   let Component = titleAs ?? 'h2'
   return (

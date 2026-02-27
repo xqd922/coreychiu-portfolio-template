@@ -5,16 +5,13 @@ import { getBlogBySlug } from '@/lib/blogs'
 import { getMDXContent } from '@/lib/mdx'
 import { BlogLayout } from '@/components/layout/BlogLayout'
 
-export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
-
 interface Props {
-  params: {
-    slug: string
-  }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const blog = await getBlogBySlug(params.slug)
+  const { slug } = await params
+  const blog = await getBlogBySlug(slug)
   if (!blog) {
     return {
       title: 'Blog not found',
@@ -28,13 +25,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPage({ params }: Props) {
-  const blog = await getBlogBySlug(params.slug)
-  
+  const { slug } = await params
+  const blog = await getBlogBySlug(slug)
+
   if (!blog) {
     notFound()
   }
 
-  const content = await getMDXContent(params.slug)
+  const content = await getMDXContent(slug)
 
   return (
     <BlogLayout blog={blog}>

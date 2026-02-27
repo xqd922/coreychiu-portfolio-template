@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
-const CustomLink = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+const CustomLink = (props: React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>) => {
   const href = props.href
   if (href?.startsWith('/')) {
     return <Link 

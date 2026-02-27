@@ -6,8 +6,6 @@ import { type BlogType, getAllBlogs } from '@/lib/blogs'
 import { formatDate } from '@/lib/formatDate'
 import { blogHeadLine, blogIntro } from '@/config/infoConfig'
 
-export const runtime = process.env.NEXT_RUNTIME === 'edge' ? 'edge' : 'nodejs'
-
 function Blog({ blog }: { blog: BlogType }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
