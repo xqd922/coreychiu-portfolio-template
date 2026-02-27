@@ -23,11 +23,11 @@
 
 ## 技术栈
 
-- [Next.js](https://nextjs.org/)
+- [Next.js 16](https://nextjs.org/) + [React 19](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Shadcn/UI](https://ui.shadcn.com/)
 - [MagicUI](https://magicui.design/)
-- [Phosphor Icons](https://phosphoricons.com//)
+- [Phosphor Icons](https://phosphoricons.com/)
 
 
 ## 演示

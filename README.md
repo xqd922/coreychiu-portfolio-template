@@ -23,11 +23,11 @@ This is a portfolio template template created by [Corey Chiu](https://coreychiu.
 
 ## Tech Stack
 
-- [Next.js](https://nextjs.org/)
+- [Next.js 16](https://nextjs.org/) + [React 19](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Shadcn/UI](https://ui.shadcn.com/)
 - [MagicUI](https://magicui.design/)
-- [Phosphor Icons](https://phosphoricons.com//)
+- [Phosphor Icons](https://phosphoricons.com/)
 
 
 ## Demo
